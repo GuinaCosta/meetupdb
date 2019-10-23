@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServer2008Dialect
+    hibernate:
+      ddl-auto: none
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+  datasource:
+    url: "jdbc:sqlserver://172.18.4.3;database=Meetup"
+    username: "grupo6"
+    password: "grupo6"
+    driverClassName: "com.microsoft.sqlserver.jdbc.SQLServerDriver"
